@@ -51,11 +51,11 @@
         <a class="subscribe-close-overlay" href="#"></a>
         <a class="subscribe-close-button" href="#"></a>
         <div class="subscribe-overlay-content">
-            {{#if @site.logo}}
-                <img class="subscribe-overlay-logo" src="{{@site.logo}}" alt="{{@site.title}}" />
-            {{/if}}
+            {{!-- {{#if @site.logo}}
+                <a href="{{@site.url}}"></a><img class="subscribe-overlay-logo" src="{{@site.logo}}" alt="{{@site.title}}" /><span class="subscribe-overlay-logo" >{{@site.title}}</span></a>
+            {{/if}} --}}
             <div class="subscribe-form">
-                <h1 class="subscribe-overlay-title">Subscribe to {{@site.title}}</h1>
+                <h1 class="subscribe-overlay-title">Subscribe to <img width="70px" src="{{@site.logo}}" alt="{{@site.title}}" /> {{@site.title}}</h1>
                 <p class="subscribe-overlay-description">Stay up to date! Get all the latest & greatest posts delivered straight to your inbox</p>
                 <form data-members-form="subscribe">
                     <div class="form-group">
@@ -125,6 +125,8 @@
 
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
+
+    <script id="dsq-count-scr" src="//dishitpala.disqus.com/count.js" async></script>
 
 </body>
 </html>

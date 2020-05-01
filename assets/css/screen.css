@@ -203,9 +203,11 @@ body {
 }
 
 .site-home-header .site-description {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     font-weight: 300;
     text-align: center;
+    font-family: monospace;
+    font-style: italic;
 }
 
 
@@ -352,15 +354,15 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     position: relative;
     z-index: 100;
     flex-shrink: 0;
-    display: inline-block;
+    display: flex;
     margin-right: 32px;
     padding: 12px 0;
     color: #fff;
     font-size: 1.7rem;
     line-height: 1.8rem;
-    font-weight: bold;
-    letter-spacing: -0.5px;
+    font-weight: 600;
     text-transform: none;
+    align-items: center;
 }
 
 .site-nav-logo:hover {
@@ -369,6 +371,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .site-nav-logo img {
     display: block;
+    margin-right: 2px;
     width: auto;
     height: 21px;
 }
@@ -498,7 +501,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .social-link {
     display: inline-block;
     margin: 0;
-    padding: 10px;
+    /* padding: 4px; */
     opacity: 0.8;
 }
 
@@ -512,7 +515,23 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .social-link-fb svg {
-    height: 1.6rem;
+    height: 2.4rem;
+}
+
+.social-link-tw svg {
+    height: 2.4rem;
+}
+
+.social-link-insta svg {
+    height: 2.4rem;
+}
+
+.social-link-git svg {
+    height: 2.2rem;
+}
+
+.social-link-linkedin svg {
+    height: 2.4rem;
 }
 
 .social-link-wb svg {
