@@ -501,7 +501,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .social-link {
     display: inline-block;
     margin: 0;
-    /* padding: 4px; */
     opacity: 0.8;
 }
 
@@ -519,7 +518,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .social-link-tw svg {
-    height: 2.4rem;
+    height: 2.5rem;
 }
 
 .social-link-insta svg {
