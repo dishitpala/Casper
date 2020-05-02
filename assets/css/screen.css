@@ -963,12 +963,12 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-tags {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
     color: var(--midgrey);
     font-size: 1.3rem;
     line-height: 1.4em;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 .post-full-meta-date {
@@ -1516,7 +1516,7 @@ Usage (In Ghost editor):
 .post-full-byline {
     display: flex;
     justify-content: space-between;
-    margin: 35px 0 0;
+    margin: 15px 0 0;
     padding-top: 15px;
     border-top: 1px solid color(var(--lightgrey) l(+10%));
 }
@@ -1688,7 +1688,7 @@ Usage (In Ghost editor):
     }
 
     .post-full-byline {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .post-full-byline-meta {
@@ -3094,4 +3094,25 @@ Usage (In Ghost editor):
     .subscribe-form .success .message-success {
         color: color(var(--green) l(+5%) s(-5%));
     }
+}
+
+/* Tags */
+.tags {
+    display: block;
+    white-space: nowrap;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    padding: 4px 10px;
+    background:#090a0b;
+    border: white;
+    color: white;
+    line-height: 1em;
+    text-transform: lowercase;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.tags:hover {
+    text-decoration: none;
+    opacity: 1;
 }

@@ -17,15 +17,15 @@ into the {body} of the default.hbs template --}}
 
             <header class="post-full-header">
 
-                {{#if primary_tag}}
+                <h1 class="post-full-title">{{title}}</h1>
+
+                {{#if tags}}
                 <section class="post-full-tags">
-                    {{#primary_tag}}
-                    <a href="{{url}}">{{name}}</a>
-                    {{/primary_tag}}
+                    {{#foreach tags}}
+                    <a class="tags" href="{{url}}">#{{slug}}</a>
+                    {{/foreach}}
                 </section>
                 {{/if}}
-
-                <h1 class="post-full-title">{{title}}</h1>
 
                 {{#if custom_excerpt}}
                 <p class="post-full-custom-excerpt">{{custom_excerpt}}</p>
@@ -108,9 +108,9 @@ into the {body} of the default.hbs template --}}
                     {{content}}
                 </div>
 
-                <div id="disqus_thread"></div>
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
                     <script>
-
                         /**
                         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
                         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -128,23 +128,8 @@ into the {body} of the default.hbs template --}}
                         })();
                     </script>
                     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
-            </section>
+                </section>
 
-            <section class="post-full-comments">
-                <div id="disqus_thread"></div>
-                    <script>
-                        var disqus_config = function () {
-                            this.page.url = "{{url absolute="true"}}";  
-                            this.page.identifier = "ghost-{{comment_id}}"
-                        };
-                        (function() {
-                            var d = document, s = d.createElement('script');
-                            s.src = 'https://dishitpala.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                        })();
-                    </script>
             </section>
            
             {{!-- Email subscribe form at the bottom of the page --}}
