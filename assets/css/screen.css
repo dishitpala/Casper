@@ -23,7 +23,8 @@ production stylesheet in assets/built/screen.css
 10. Subscribe Overlay
 11. Site Footer
 12. Dark Mode
-
+13. Tags
+14. Atthis share buttons
 */
 
 
@@ -3114,5 +3115,31 @@ Usage (In Ghost editor):
 
 .tags:hover {
     text-decoration: none;
+    opacity: 1;
+}
+
+
+/* Atthis share buttons */
+.at-share-btn-elements {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    margin-top: 100px;
+
+}
+
+.at-share-btn-elements .at-icon-wrapper {
+    border-radius: 5px !important;
+    font-weight: bold;
+    box-shadow: none;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    opacity: 0.8;
+}
+
+.at-share-btn-elements .at-icon-wrapper:hover {
+    transform: none !important;
+    text-decoration: none !important;
+    box-shadow: none;
     opacity: 1;
 }
