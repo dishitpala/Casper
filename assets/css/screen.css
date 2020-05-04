@@ -3143,3 +3143,18 @@ Usage (In Ghost editor):
     box-shadow: none;
     opacity: 1;
 }
+
+/* Add support for custom h tag with icon */
+
+.subtitle {
+    display: flex;
+    align-items: center;
+}
+
+.subtitle .subtitle__icon {
+    margin: 0;
+}
+
+.subtitle .subtitle__text {
+    padding-left: 5px;
+}
